@@ -8,8 +8,8 @@ list_2 = [i for i in range(10) if i % 2 == 0]
 
 print(list_1, list_2)
 
-for i in range(1, 11):
-    print("=" * (11 - i), "*" * (i * 2 - 1), "=" * (11 - i))
+for i in range(0, 11):
+    print("=" * (11 - i) + "*" * (i * 2 + 1) + "=" * (11 - i))
 
 is_upset = False
 sweet = 0
