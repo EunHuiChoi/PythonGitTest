@@ -1,16 +1,22 @@
-# This is a sample Python script.
+list_1 = []
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+for i in range(10):
+    if i % 2 == 0:
+        list_1.append(1)
 
+list_2 = [i for i in range(10) if i % 2 == 0]
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+print(list_1, list_2)
 
+for i in range(1, 11):
+    print("=" * (11 - i), "*" * (i * 2 - 1), "=" * (11 - i))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+is_upset = False
+sweet = 0
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while not is_upset:
+    sweet = sweet + 1
+    print("still not good")
+    if sweet == 10:
+        is_upset = True
+        print("good")
